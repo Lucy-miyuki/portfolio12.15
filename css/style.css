@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
+body{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.img-size {
+	max-width: 100%;
+	height: auto;
+}
+
+/*-------Nav bar style---------*/
+
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    background-color: #272727;
+    padding: 20px 0;
+    
+}
+
+.navbar .navbar-collapse .nav-link{
+    color: #ffffff;
+    padding: .8rem;
+}
+
+.navbar .navbar-collapse .nav-link:hover{
+    color: #1ebba3;
+}
+
+/*-------start image slider---------*/
+.slide-top{
+    margin-top: 100px;
+}
+
+/*-------About  section ---------*/
+.sections{
+padding:100px ;
+}
+
+.about-avatar{
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+#about-area .about-avatar img{
+    border-radius: 50%;
+    padding: 8px;
+    background: #dddddd none repeat scroll 0 0;;
+    width: 220px;
+    height: 220px;
+}
+
+
+.about-left li{
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.about-left li span{
+    display: inline-block;
+    width: 40%;
+}
+
+.about-left li span i{
+    border: 1px solid #111;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.about-btns{
+    margin: 50px 0;
+}
+
+.cv-btn {
+    background: #212121;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/*-------Service  section ---------*/
+#about-service{
+    background-color: #f4f4f4;
+}
+
+.site-heading{
+    margin-bottom:60px ;
+    text-align: center;
+}
+
+.site-heading h2{
+    color: #333333;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.single-service{
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.service-icon{
+    background-color: #eeeeee;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.hvr-rectangle-out::before{
+    border-radius: 20px;  
+}
+
+.hvr-rectangle-out:hover{
+    cursor: pointer;
+}
+
+.service-icon-color{
+    color: #505962;
+}
+
+.service-icon i{
+    font-size: 30px;
+    line-height:80px;
+
+}
+
+.single-service h4{
+    margin: 30px 0 20px 0 ;
+    font-weight: 600;
+}
+
+
+
+/*-------Work  section ---------*/
+
+.item-content{
+    width: 100%;
+    height: 100%;
+    border: 1px solid none;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.content-child{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.ccontent-img1{background-image: url(/img/item1.jpg);}
+
+.item-content:hover .content-child,
+.item-content:focus .content-child {
+  transform: scale(1.2);
+}
+
+.item-content:hover .content-child , .item-content:focus .content-child  {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.item-content:hover .content-child:before, .item-content:focus .content-child:before {
+    display: block;
+}
+
+.item-content:hover a, .item-content:focus a {
+    display: block;
+}
+
+.content-child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+/*-------Hire  section ---------*/
+
+.about-hire{
+    background-image: url(/img/bg-hiring.jpg);
+    padding-top: 110px !important;
+    padding-bottom: 110px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+}
+
+
+.about-hire h2{
+    margin: 45px 0 45px 0;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about-hire p{
+    font-size: 20px;
+    color: #FFF;
+}
+
+.hire-btn{
+    margin: 40px 0;
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+
+/*-------Blog  section ---------*/
+
+.blog-each{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.text-all-font{
+    color: #c5a47e !important;
+    margin:  10px auto 15px auto!important;
+    display: block;
+    font-size: 25px;
+    text-align: center;
+}
+
+.text-medium p{
+    margin: 10px;
+    text-align: center;
+}
+
+
+.separator-line-full{
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+    background:#d3d3d3;
+}
+
+.separator-bottom{
+    margin-bottom: 10px;
+}
+
+
+
+.blog-bottom{
+    text-align: center;
+    font-size: 14px;
+}
+
+.text-small {
+    color: #848484;
+}
+
+.text-small:hover{
+    color: #666666;
+}
+
+.text-small span{
+    color: #707070;
+}
+
+
+/*-------Contact  section ---------*/
+
+.about-contact-detail{
+    background-color:#f4f4f4 ;
+}
+
+input,textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 20px !important;
+}
+
+.about-contact-detail textarea{
+    min-height: 120px;
+}
+
+/*-------footer  section ---------*/
+
+.about-footer{
+    background-color: #272727;
+    padding: 60px 0 !important;
+}
+
+
+
+.display-table{
+    display: table !important;
+
+}
+
+.display-table-cell-middle{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    text-align: center;
+}
+
+.middle-height{
+    height: 50px;
+}
+
+.small-icon-contact{
+    margin-right: 20px;
+    color: #fff;
+}
